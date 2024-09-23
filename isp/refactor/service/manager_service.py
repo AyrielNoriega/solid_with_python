@@ -1,9 +1,10 @@
+from isp.refactor.repository.i_project_repository import IProjectRepository
 from isp.symptom.i_repository import IRepository
 from isp.symptom.model.project import Project
 
 
-class ManagerService(object):
-    def __init__(self, repository: IRepository):
+class ManagerService():
+    def __init__(self, repository: IProjectRepository):
         self.data_repository = repository
 
 

@@ -1,10 +1,10 @@
-from asyncio import Task
-
-from isp.symptom.i_repository import IRepository
+from typing import List
+from isp.refactor.model.task import Task
+from isp.refactor.repository.i_task_repository import ITaskRepository
 
 
 class TeamMemberService:
-    def __init__(self, repository: IRepository):
+    def __init__(self, repository: ITaskRepository):
         self.data_repository = repository
 
     def save_task(self, task: Task) -> bool:

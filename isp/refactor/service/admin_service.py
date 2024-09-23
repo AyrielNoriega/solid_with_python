@@ -1,10 +1,10 @@
 from typing import List
-from isp.symptom.i_repository import IRepository
+from isp.refactor.repository.i_user_repository import IUserRepository
 from isp.symptom.model.user import User
 
 
-class AdminService:
-    def __init__(self, repository: IRepository):
+class AdminService():
+    def __init__(self, repository: IUserRepository):
         self.data_repository = repository
 
 
