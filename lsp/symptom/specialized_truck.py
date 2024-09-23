@@ -1,6 +1,6 @@
 
-from lsp.symptom.trip import Trip
-from lsp.symptom.truck import Truck
+from isp.symptom.trip import Trip
+from isp.symptom.truck import Truck
 
 
 class SpecializedTruck(Truck):

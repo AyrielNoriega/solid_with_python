@@ -2,7 +2,7 @@
 
 from typing import List
 
-from lsp.symptom.trip import Trip
+from isp.symptom.trip import Trip
 
 
 class Truck:
